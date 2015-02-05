@@ -49,4 +49,5 @@ wrong. Thank you!
 
 ## Change Log
 
+* 2015-02-05 v1.0.1  NOS: Allow slashes in object key.
 * 2015-02-04 v1.0.0  Add NOS API.
