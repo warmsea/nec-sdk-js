@@ -1,17 +1,8 @@
 {
-    "name": "aws-sdk",
-    "description": "AWS SDK for JavaScript",
-    "version": "2.1.8",
-    "author": {
-      "name":"Amazon Web Services",
-      "email":"",
-      "url":"http://aws.amazon.com/"
-    },
-    "homepage": "https://github.com/aws/aws-sdk-js",
-    "contributors": [
-      "Loren Segal <lsegal@amazon.com>",
-      "Trevor Rowe <trevrowe@amazon.com>"
-    ],
+    "name": "nec-sdk",
+    "description": "NetEase Cloud SDK for JavaScript",
+    "version": "1.0.0",
+    "author": "Su Su <s@warmsea.net>",
     "devDependencies": {
       "repl.history": "*",
       "semver": "*",
@@ -41,21 +32,17 @@
     },
     "repository": {
       "type" : "git",
-      "url": "git://github.com/aws/aws-sdk-js"
+      "url": "git://github.com/warmsea/nec-sdk-js"
     },
     "bugs" : {
-      "url" : "http://github.com/aws/aws-sdk-js/issues",
-      "mail" : ""
+      "url" : "http://github.com/warmsea/nec-sdk-js/issues"
     },
     "licenses": [{
       "type": "Apache 2.0",
-      "url": "http://github.com/aws/aws-sdk-js/raw/master/LICENSE.txt"
+      "url": "http://github.com/warmsea/nec-sdk-js/raw/master/LICENSE.txt"
     }],
     "keywords": [
-      "api", "amazon","aws","ec2","simpledb","s3","sqs","ses","sns","route53","rds","elasticache","cloudfront","fps",
-      "cloudformation","cloudwatch","dynamodb","iam","swf","autoscaling","cloudsearch","elb",
-      "loadbalancing","emr","mapreduce","importexport","storagegateway","workflow","ebs","vpc","beanstalk",
-      "glacier","kinesis","cloudtrail"
+      "api", "cloud", "netease", "nos"
     ],
     "scripts" : {
       "test" : "npm -s run-script lint && npm -s run-script unit && npm -s run-script buildertest && npm -s run-script browsertest && ([ -f configuration ] && npm -s run-script integration || true)",
