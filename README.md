@@ -23,6 +23,28 @@ Currently only NOS (Netease Object Storage) is supported. And the API
 definitions is just a copy of AWS S3, with metadata and default config
 modified.
 
+## Samples
+
+```javascript
+var NEC = require('nec-sdk');
+
+NEC.config.update({ accessKeyId: 'akid', secretAccessKey: 'secret' });
+
+var nos = new NEC.NOS();
+
+nos.putObject({
+  Bucket: 'myBucket',
+  Key: 'myKey',
+  Body: 'Hello!'
+}, function(err, data) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log('Successfully uploaded data to myBucket/myKey');
+  }
+});
+```
+
 ## License
 
 The license of AWS SDK JS is
@@ -41,7 +63,7 @@ It seems the license asks me to list all modified files, they are:
 
 And I add a few files of my own, they are:
 
-* apis/nos-2015-12-05.min.json
+* apis/nos-2010-12-05.min.json
 * lib/signers/nos.js
 
 I'm not quite familiar with the license. Please let me know if I did something
@@ -49,5 +71,10 @@ wrong. Thank you!
 
 ## Change Log
 
-* 2015-02-05 v1.0.1  NOS: Allow slashes in object key.
-* 2015-02-04 v1.0.0  Add NOS API.
+* 2015-05-05 v1.0.2
+  * Update README.
+  * NOS: Allow `x-nos-*` header features.
+* 2015-02-05 v1.0.1
+  * NOS: Allow slashes in object key.
+* 2015-02-04 v1.0.0
+  * Add NOS API.
