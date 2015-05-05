@@ -1,7 +1,7 @@
 {
     "name": "nec-sdk",
     "description": "NetEase Cloud SDK for JavaScript",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Su Su <s@warmsea.net>",
     "devDependencies": {
       "repl.history": "*",
